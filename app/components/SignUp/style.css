@@ -1,0 +1,93 @@
+.description {
+  max-width: 300px;
+}
+
+.form-submit {
+  text-align: center;
+}
+
+h3 {
+  color: rgb(0, 99, 223);
+  margin-top: 0;  
+}
+
+ .sign-up {
+  display: flex;
+  justify-content: center;
+} 
+
+.sign-up-btn {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 99, 223);
+  cursor: pointer;
+  display: inline-block;  
+  font-family: inherit;
+  font-size: 1.1em;
+  height: 40px;  
+  line-height: 42px;
+  margin-top: 1rem;
+  padding: 0;
+  position: relative;
+  transition: all 0.3s ease;  
+  width: 150px;
+}
+
+.sign-up-btn span {
+  display: block;
+  height: 100%;  
+  position: relative;
+  width: 100%;
+}
+.sign-up-btn:before, .sign-up-btn:after {
+  background-color: rgb(86, 86, 86);
+  content: "";
+  height: 0%;  
+  position: absolute;
+  width: 1px;
+}
+.sign-up-btn:before {
+  right: 0;
+  top: 0;
+  transition: all 0.1s ease;
+}
+.sign-up-btn:after {
+  bottom: 0;  
+  left: 0;
+  transition: all 0.1s 0.2s ease;
+}
+.sign-up-btn:hover:before {
+  height: 100%;  
+  transition: all 0.1s 0.2s ease;
+}
+.sign-up-btn:hover:after {
+  height: 100%;  
+  transition: all 0.1s ease;
+}
+.sign-up-btn span:before, .sign-up-btn span:after {
+  background-color: rgb(86, 86, 86);  
+  content: "";  
+  position: absolute;
+}
+.sign-up-btn span:before {
+  left: 0;
+  top: 0;
+  height: 1px;  
+  width: 0%;
+  transition: all 0.1s 0.1s ease;
+}
+.sign-up-btn span:after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+}
+.sign-up-btn span:hover:before {
+  width: 100%;
+}
+
+.sign-up-btn:hover {
+  background-color: rgb(0, 99, 223);  
+  color: rgb(235, 235, 235);
+  transition-delay: 0.3s;
+}

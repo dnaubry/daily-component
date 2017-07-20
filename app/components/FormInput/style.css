@@ -1,0 +1,59 @@
+.field {
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.field-short {
+  width: 70px;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(86, 86, 86);
+  box-sizing: border-box;
+  font-family: inherit;
+  display: block;
+  padding: .25rem;
+  width: 300px;
+}
+
+.input:focus {
+  border-bottom: 2px solid rgb(86, 86, 86);
+  outline: thin dotted;
+}
+
+.input-invalid {
+  border-bottom: 2px solid rgb(223,12,0);
+}
+
+.input-short {
+  width: 70px;
+}
+
+.input-inline {
+  display: inline-block;
+}
+
+.label {
+  color: rgb(0, 99, 223);  
+  position: absolute;
+  top: 0;
+  z-index: -5;
+  transition: all 0.3s ease;
+}
+
+.label-floated {
+  font-size: .9em;
+  top: -20px;  
+}
+
+.tip {
+  color: rgb(107, 107, 107);
+  font-size: .85em;
+  margin: 0;
+}
+
+.tip-invalid {
+  color: rgb(223,12,0);
+}

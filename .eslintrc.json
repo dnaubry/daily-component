@@ -1,0 +1,23 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": "airbnb",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "babel",
+    "react"
+  ],
+  "rules": {
+    "comma-dangle": 0,
+    "linebreak-style": "off",
+    "one-var": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "semi": 0,
+    "space-before-function-paren": 0
+  }
+}

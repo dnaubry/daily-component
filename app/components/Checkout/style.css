@@ -1,0 +1,101 @@
+.hide {
+  display: none;
+}
+
+.billing-selection {
+  max-width: 300px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.checkout-btn {
+  background-color: rgb(0, 99, 223);
+  color: rgb(244, 244, 244);
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: 1.1em;
+  height: 40px;  
+  line-height: 40px;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  width: 300px;  
+}
+
+.checkout-btn:hover {
+  background-color: rgb(244, 244, 244);
+  color: rgb(0, 99, 223);
+  border-bottom: 1px solid rgb(86, 86, 86);
+}
+
+.location-details, .card-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  max-width: 300px;
+}
+
+.exp {
+  margin-right: .5rem;
+}
+
+.label-ccv, .label-state, .label-zip-code, .exp {
+  color: rgb(0, 99, 223);
+}
+
+.label-ccv, .label-zip-code {
+  margin-left: 2rem;
+  margin-right: .5rem;
+}
+
+.label-date {
+  position: absolute;
+  right: -9999px;
+}
+
+.input-zip-code, .input-ccv {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(86, 86, 86);
+  font-family: inherit;
+  padding-left: .25rem;
+  width: 62px;
+}
+
+.input-ccv:focus, .input-zip-code:focus {
+  outline: thin dotted;
+}
+
+.select-date, .select-state {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.select-date:first-of-type {
+  padding-right: .25rem;
+}
+
+.select-date:last-of-type {
+  padding-left: .25rem;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select-state {
+  padding: 0 .5rem;
+}
+
+.select-date:focus, .select-state:focus {
+  outline: thin dotted;
+}
