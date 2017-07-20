@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --port 3000 --hot --host 0.0.0.0",
+    "start": "webpack-dev-server --open",
     "build": "cross-env NODE_ENV='production' webpack -p",
     "deploy": "npm run build && firebase deploy",
     "firebase-init": "firebase login && firebase init",
